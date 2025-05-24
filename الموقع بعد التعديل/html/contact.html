@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>اتصل بفادي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #121212;
+      margin: 0;
+      padding: 0;
+      color: #f5f5f5;
+    }
+
+    main {
+      padding: 20px;
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #ffd700;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #ffd700;
+    }
+
+    select {
+      padding: 8px 12px;
+      border-radius: 6px;
+      background-color: #222;
+      color: #ffd700;
+      border: 1px solid #ffd700;
+      margin-right: 10px;
+    }
+
+    form {
+      background-color: #2a2a2a;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 15px;
+      border-radius: 5px;
+      border: 1px solid #555;
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+
+    button {
+      background-color: #ffd700;
+      color: #121212;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ffcc00;
+    }
+
+    .social {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .social p {
+      color: #bbb;
+    }
+
+    .social ul {
+      list-style: none;
+      padding: 0;
+      display: inline-block;
+    }
+
+    .social li {
+      margin: 10px 0;
+    }
+
+    .social a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .social a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<main>
+  <h2>📞 اتصل بفادي</h2>
+
+  <!-- قائمة منسدلة للتنقل -->
+  <div style="text-align: center; margin-bottom: 20px;">
+    <label for="page-select">🔽 اختر صفحة للتنقل:</label>
+    <select id="page-select" onchange="location = this.value;">
+      <option selected disabled>-- اختر صفحة --</option>
+      <option value="index.html">الرئيسية</option>
+      <option value="programs.html">برامج التمارين</option>
+      <option value="nutrition.html">نصائح غذائية</option>
+      <option value="goals.html">أهداف اللياقة</option>
+      <option value="contact.html">اتصل بنا</option>
+    </select>
+  </div>
+
+  <!-- نموذج التواصل -->
+  <form>
+    <label>الاسم:</label>
+    <input type="text" placeholder="اكتب اسمك هنا" />
+
+    <label>البريد الإلكتروني:</label>
+    <input type="email" placeholder="you@example.com" />
+
+    <label>رسالتك:</label>
+    <textarea placeholder="اكتب رسالتك هنا..."></textarea>
+
+    <button type="submit">📤 إرسال</button>
+  </form>
+
+  <!-- روابط السوشال -->
+  <div class="social">
+    <p>تابعنا على:</p>
+    <ul>
+      <li><a href="#">📸 إنستغرام</a></li>
+      <li><a href="#">▶️ يوتيوب</a></li>
+    </ul>
+  </div>
+</main>
+
+</body>
+</html>
